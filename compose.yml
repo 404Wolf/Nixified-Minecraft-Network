@@ -1,0 +1,22 @@
+services:
+  database:
+    image: mysql:latest 
+    environment: 
+      MYSQL_DATABASE: "db" 
+      MYSQL_USER: "root" 
+      MYSQL_PASSWORD: "" 
+    ports: 
+      - "3306:3306"
+    volumes: 
+      - "data/missile-wars/mysql:/var/lib/mysql"
+  missile-wars:
+    image: "localhost/paper-minecraft-server"
+    volumes:
+      - "./data/missile-wars/server:/server"
+    networks:
+      - main
+    ports:
+      - "25565:25565"
+networks:
+  main:
+    driver: bridge

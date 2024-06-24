@@ -1,0 +1,58 @@
+: 1719260747:0;unzip ~/Downloads/lobby-1-e1690.zip .
+: 1719260749:0;unzip ~/Downloads/lobby-1-e1690.zip 
+: 1719260749:0;ls
+: 1719260760:0;mv Lobby-1 data/missile-wars/world
+: 1719260761:0;ls
+: 1719260762:0;clear
+: 1719260763:0;ls
+: 1719260767:0;podman compose up
+: 1719260772:0;podman kill 9ce5482b09b5bc8176a763547bae6319eb2f8f438a1666099ac8a1c7e7cdbf79
+: 1719260774:0;podman rm 9ce5482b09b5bc8176a763547bae6319eb2f8f438a1666099ac8a1c7e7cdbf79
+: 1719260776:0;podman compose up
+: 1719261030:0;podman kill eef2efc393b824b6f02cb6a5a0f6b682dc1b24989a12a3ee4c5de31031f49fe3
+: 1719261037:0;podman rm eef2efc393b824b6f02cb6a5a0f6b682dc1b24989a12a3ee4c5de31031f49fe3
+: 1719261134:0;ls
+: 1719261151:0;mv servers/spigot/ servers/paper
+: 1719261250:0;ls
+: 1719261265:0;cp ~/Downloads/paper-1.20.6-147.jar servers/paper
+: 1719261270:0;rm servers/paper/spigot.jar
+: 1719261274:0;mv servers/paper/paper-1.20.6-147.jar paper.jar
+: 1719261278:0;mv paper.jar servers/paper
+: 1719261374:0;nix build .#images.paper
+: 1719261377:0;git add --a
+: 1719261380:0;git add .
+: 1719261384:0;nix build .#images.paper
+: 1719261406:0;ls
+: 1719261410:0;podman load < result
+: 1719261426:0;podman-compose up
+: 1719261431:0;podman rm a522cb450b68ee40e32001df2173e048b1148c843a9d8e73ca2d121c545c8a0e
+: 1719261440:0;podman-compose up
+: 1719261448:0;podman kill pod_minecraft-network
+: 1719261450:0;podman rm pod_minecraft-network
+: 1719261451:0;podman-compose up
+: 1719261892:0;rm -r data/missile-wars/plugins/FastAsyncWorldEdit*
+: 1719261906:0;cp ~/Downloads/worldedit-bukkit-7.3.3.jar data/missile-wars/plugins
+: 1719261910:0;podman-compose up
+: 1719262159:0;rm data/missile-wars/mw-default_map-1
+: 1719262162:0;rm -r data/missile-wars/mw-default_map-1
+: 1719262163:0;rm -r data/missile-wars/mw-default_map-2
+: 1719262164:0;rm -r data/missile-wars/mw-default_map-3
+: 1719262165:0;rm -r data/missile-wars/mw-default_map-4
+: 1719262249:1;podman compose up
+: 1719262263:0;podman rm *
+: 1719262268:0;podman rm eeffbfc7ce687c2f0a5aa088882b31247fd694296b45184a9e679e7c731a3450
+: 1719262270:0;podman compose up
+: 1719250483:12057;fg
+: 1719262541:0;ls
+: 1719262549:0;mv data/missile-wars/ data/missile-wars/server
+: 1719262553:0;mkdir data/missile-wars/server
+: 1719262555:0;mv data/missile-wars/ data/missile-wars/server
+: 1719262558:0;mv data/missile-wars/* data/missile-wars/server
+: 1719262559:0;ls data
+: 1719262562:0;ls data/missile-wars
+: 1719262569:0;mkdir data/missile-wars/mysql
+: 1719262570:0;fg
+: 1719262609:0;git add .
+: 1719262611:0;ls
+: 1719262612:0;ls server
+: 1719262615:0;cd data

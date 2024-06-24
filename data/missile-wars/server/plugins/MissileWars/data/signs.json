@@ -1,0 +1,48 @@
+{
+  "signs": [
+    {
+      "location": {
+        "world": "world",
+        "x": 191.0,
+        "y": 66.0,
+        "z": -207.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "lobby": "lobby0"
+    },
+    {
+      "location": {
+        "world": "world",
+        "x": 189.0,
+        "y": 66.0,
+        "z": -211.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "lobby": "lobby0"
+    },
+    {
+      "location": {
+        "world": "world",
+        "x": 189.0,
+        "y": 66.0,
+        "z": -215.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "lobby": "lobby0"
+    },
+    {
+      "location": {
+        "world": "world",
+        "x": 191.0,
+        "y": 66.0,
+        "z": -219.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      },
+      "lobby": "lobby0"
+    }
+  ]
+}

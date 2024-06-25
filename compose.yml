@@ -1,14 +1,23 @@
 services:
-  database:
+  party-games:
+    image: "localhost/paper-minecraft-server"
+    volumes:
+      - "./data/party-games/server:/server"
+    networks:
+      - main
+    ports:
+      - "25565:25565"
+  mwmysql:
     image: mysql:latest 
     environment: 
-      MYSQL_DATABASE: "db" 
-      MYSQL_USER: "root" 
-      MYSQL_PASSWORD: "" 
+      - MYSQL_DATABASE=db 
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    networks:
+      - main
     ports: 
       - "3306:3306"
     volumes: 
-      - "data/missile-wars/mysql:/var/lib/mysql"
+      - "./data/missile-wars/mysql:/var/lib/mysql"
   missile-wars:
     image: "localhost/paper-minecraft-server"
     volumes:
@@ -16,7 +25,7 @@ services:
     networks:
       - main
     ports:
-      - "25565:25565"
+      - "25566:25565"
 networks:
   main:
     driver: bridge

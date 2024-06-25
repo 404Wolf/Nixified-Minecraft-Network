@@ -20,8 +20,8 @@
       in
       {
         packages = {
-          images = {
-            paper = pkgs.callPackage ./servers/paper { paper = ./servers/paper/paper.jar; };
+          servers = {
+            missile-wars = pkgs.callPackage ./servers/missile-wars { };
           };
         };
         devShells = {
